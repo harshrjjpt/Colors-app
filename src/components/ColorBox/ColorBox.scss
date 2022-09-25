@@ -1,0 +1,33 @@
+.color-box{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    height: 25%;
+    cursor: pointer;
+    .copy{
+        cursor: pointer;
+        color: white;
+        top: 60%;
+        position: absolute;
+        opacity: 0;
+        width: 100px;
+        height: 30px;
+        border-radius: 30px;
+        border: none;
+        background-color: rgba(255, 255, 255, 0.274);
+    }
+    .see-more{
+        font-size: 12px;
+        position: absolute;
+        bottom: 4px;
+        right: 4px;
+    }
+}
+.color-box:hover{
+    .copy{
+        transition: 0.3s all ease-in-out;
+        opacity: 1;
+    }
+}
