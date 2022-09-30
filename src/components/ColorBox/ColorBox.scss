@@ -6,6 +6,21 @@
     width: 20%;
     height: 25%;
     cursor: pointer;
+    // .copy-transition{
+    //     position: absolute;
+    //     background-color: red;
+    //     opacity: 0;
+    //     width: 100%;
+    //     height: 100%;
+    //     // transform: scale(0.1);
+    //     transition: 0.5s transform ease-in-out;
+    // }
+    // .copy-transition .play-transition{
+    //     opacity: 1;
+    //     z-index: 10;
+    //     background-color: red;
+    //     transform: scale(10);
+    // }
     .copy{
         cursor: pointer;
         color: white;

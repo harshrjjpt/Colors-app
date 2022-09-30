@@ -1,5 +1,27 @@
 .pallete-main{
     height: 100vh;
+    .slider-container{
+        padding: 5px 20px;
+        // border-radius: 20px;
+        // display: flex;
+        // justify-content: center;
+        // align-items: center;
+        // height: 30px;
+        // background-color: rgb(56, 44, 44);
+        width: 300px;
+        .rc-slider-track{
+            background-color: rgba(137, 43, 226, 0.281);
+            height: 8px;
+        }
+        .rc-slider-rail{
+            height: 8px;
+        }
+        .rc-slider-handle{
+            background-color: blueviolet;
+            border: none;
+            top: 7px;
+        }
+    }
     .colors-container{
         display: flex;
         flex-wrap: wrap;

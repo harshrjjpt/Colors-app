@@ -1,9 +1,24 @@
 import './ColorBox.scss';
+import { useState } from 'react';
 import CopyToClipboard from 'react-copy-to-clipboard';
 const ColorBox = (props) => {
+    let copy = false;
+    const copyChanger =()=> {
+        copy = !copy;
+    }
+    async function copyHandler(){
+        await copyChanger();
+        console.log(copy);
+        await setTimeout(()=> {
+            copyChanger();
+        }, 1500);
+        console.log(copy);
+    }
+    let colorr = props.backgroundColor.hex;
     return(
-        <CopyToClipboard text={props.backgroundColor.color}>
-        <div style={{background: props.backgroundColor.color}} className="color-box">
+        <CopyToClipboard text={props.backgroundColor.color} onCopy={copyHandler}>
+        <div style={{background: colorr}} className="color-box">
+        <div style={{background: colorr}} className={copy? "copy-transition play-transition" : "copy-transition"}></div>
         <h1>{props.backgroundColor.name}</h1>
         <button className='copy'>COPY</button>
         <span className='see-more'>See More</span>
