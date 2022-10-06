@@ -1,11 +1,12 @@
 import Icon from "../logo";
+import MainNavbar from "../Main-Navbar/MainNavbar";
 import Navbar from "../Navbar/Navbar";
 import "./Home.scss";
 
 const Home = () => {
   return (
     <div className="home">
-      <Navbar></Navbar>
+      <MainNavbar />
       <div className="home-wrapper">
         <div className="sub-home-wrapper">
           <div className="left"></div>

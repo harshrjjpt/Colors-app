@@ -6,14 +6,12 @@ import { MenuItem, Select } from "@material-ui/core";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 const Navbar = (props) => {
-  const [colorType, setcolorType] = useState('hex');
-
+  const [colorType, setcolorType] = useState("hex");
 
   function selectorHandler(e) {
     setcolorType(e.target.value);
     props.colorTypeHandler(e.target.value);
-}
-
+  }
 
   return (
     <div className="navbar">
@@ -43,9 +41,15 @@ const Navbar = (props) => {
       </div>
       <div className="right">
         <ul>
-          <li><Link to="/">Home</Link></li>
-          <li>Trending</li>
-          <li>Brands</li>
+          <li>
+            <Link to="/">Home</Link>
+          </li>
+          <li>
+            <Link to="/pallate-list">Trending</Link>
+          </li>
+          <li>
+            <Link to="/pallate">Brands</Link>
+          </li>
         </ul>
         <div className="hamburger-container">
           <img
